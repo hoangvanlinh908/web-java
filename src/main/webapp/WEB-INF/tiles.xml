@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <!--     Base Define -->
+    <definition name="client.definition"
+                template="/WEB-INF/jsp/layouts/clientLayout.jsp">
+        <put-attribute name="header" value="/WEB-INF/jsp/admin/header.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/admin/footer.jsp" />
+    </definition>
+    <definition name="client.definition1"
+                template="/WEB-INF/jsp/layouts/clientLayout1.jsp">
+
+        <put-attribute name="body" value="" />
+
+    </definition>
+    <definition name="client.definition3"
+                template="/WEB-INF/jsp/layouts/clientLayout2.jsp">
+        <put-attribute name="header" value="/WEB-INF/jsp/smatshop/header.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/smatshop/footer.jsp" />
+    </definition>
+
+    <definition name="he"
+                extends="client.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/eshop/he.jsp" />
+
+    </definition>
+    <definition name="cart"
+                extends="client.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/eshop/cart.jsp" />
+
+    </definition>
+    <definition name="home"
+                extends="client.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/eshop/home.jsp" />
+
+    </definition>
+    <definition name="product"
+                extends="client.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/eshop/product.jsp" />
+
+    </definition>
+    <definition name="index"
+                extends="client.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/adminUser/index.jsp" />
+
+    </definition>
+    <definition name="register"
+                extends="client.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/adminUser/register.jsp" />
+
+    </definition>
+    <definition name="edit"
+                extends="client.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/adminUser/edit.jsp" />
+
+    </definition>
+    <definition name="editcategory"
+                extends="client.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/category/edit.jsp" />
+
+    </definition>
+    <definition name="login"
+                extends="client.definition1">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/login.jsp" />
+
+    </definition>
+    <definition name="indexCategory"
+                extends="client.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/category/indexCategory.jsp" />
+
+    </definition>
+    <definition name="indexProduct"
+                extends="client.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/product/index.jsp" />
+
+    </definition>
+    <definition name="indexUser"
+                extends="client.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/user/index.jsp" />
+
+    </definition>
+    <definition name="indexTransaction"
+                extends="client.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/transaction/index.jsp" />
+
+    </definition>
+    <definition name="addCategory"
+                extends="client.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/category/add.jsp" />
+
+    </definition>
+    <definition name="addProduct"
+                extends="client.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/product/add.jsp" />
+
+    </definition>
+    <definition name="editProduct"
+                extends="client.definition">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/product/edit.jsp" />
+
+    </definition>
+    <definition name="shop"
+                extends="client.definition3">
+        <put-attribute name="body" value="/WEB-INF/jsp/smatshop/index.jsp" />
+
+    </definition>
+    <definition name="deltail"
+                extends="client.definition3">
+        <put-attribute name="body" value="/WEB-INF/jsp/smatshop/deltail.jsp" />
+
+    </definition>
+    <definition name="shop-product"
+                extends="client.definition3">
+        <put-attribute name="body" value="/WEB-INF/jsp/smatshop/productCategory.jsp" />
+
+    </definition>
+    <definition name="shop-product1"
+                extends="client.definition3">
+        <put-attribute name="body" value="/WEB-INF/jsp/smatshop/productCategory1.jsp" />
+
+    </definition>
+    <definition name="LoginUser"
+                extends="client.definition3">
+        <put-attribute name="body" value="/WEB-INF/jsp/smatshop/Login.jsp" />
+
+    </definition>
+    <definition name="registerUser"
+                extends="client.definition3">
+        <put-attribute name="body" value="/WEB-INF/jsp/smatshop/register.jsp" />
+
+    </definition>
+    <definition name="cart"
+                extends="client.definition3">
+        <put-attribute name="body" value="/WEB-INF/jsp/smatshop/cart.jsp" />
+
+    </definition>
+    <definition name="thanhtoan"
+                extends="client.definition3">
+        <put-attribute name="body" value="/WEB-INF/jsp/smatshop/thanhtoan.jsp" />
+
+    </definition>
+</tiles-definitions>
